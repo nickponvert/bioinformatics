@@ -39,7 +39,7 @@ def contig_file_profile(filename):
 def main(filename):
     contig_file_profile(filename)
 
-filename = sys.argv[1]
+#filename = sys.argv[1]
 if __name__=="__main__":
     main(filename)
 

@@ -141,3 +141,5 @@ def contig_file_profile(filename):
     print "Largest contig: %d" % max(record_lengths)
     print "N50: %d" % n_stat(record_lengths, 0.5)
     print "N90: %d" % n_stat(record_lengths, 0.9)
+
+
