@@ -6,3 +6,8 @@ for i in range(10):
 	hello(str(i))
 
 
+
+def hello(hello):
+	See!! That worked
+
+
