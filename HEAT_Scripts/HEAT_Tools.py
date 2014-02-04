@@ -115,3 +115,31 @@ def seq_lookup(index, hit_names, export_file_name):
 
     #all the sequences will now be available in the export file. 
     export_file.close()
+    
+def n_stat(lengths,prop):
+
+    '''Example: N50 stat: n_stat(lengths, 0.5)'''
+    
+    index=0
+    total=0
+    while total<sum(lengths)*prop:
+        total+=lengths[index]
+        index+=1
+    return lengths[index]
+
+def contig_file_profile(filename):
+
+    handle = open(filename)
+    fasta_file=SeqIO.parse(handle, 'fasta')
+    
+    record_lengths=[]
+    for record in fasta_file:
+        record_lengths.append(len(record))    
+        
+    print "Total number of contigs: %d" % len(record_lengths)
+    print "Total number of bases in all contigs: %d" % sum(record_lengths)    
+    print "Largest contig: %d" % max(record_lengths)
+    print "N50: %d" % n_stat(record_lengths, 0.5)
+    print "N90: %d" % n_stat(record_lengths, 0.9)
+
+

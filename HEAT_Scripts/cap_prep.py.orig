@@ -3,10 +3,16 @@
 from Bio import SeqIO
 import sys
 
+<<<<<<< HEAD
+filename = sys.argv[1]
+
+SeqIO.convert(filename, 'fastq', '%s%s' % (filename.split('.')[0],  '.fasta'), 'fasta')
+=======
 def convert_fastq(file):
 
 	'''This function takes a fastq file and creates a converted fasta file in the same directory, with the same filename'''
 
 	SeqIO.convert(file, 'fastq', '%s.%s' % (file.split('.')[0], 'fasta'), 'fasta')
+>>>>>>> 7c761e63380ebcbb85ffe4284aad5c1c1bd50a3a
 
 
