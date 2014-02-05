@@ -1,0 +1,5 @@
+#!/bin/bash
+
+cd /media/nick/FreeAgent\ GoFlex\ Drive/GENOME\ DATA/MTF9_Data 
+
+blastn -query /home/nick/Desktop/Work/HEAT_Project/Projects_F13/Transposase/scaffolding_query_file.fasta -db MP1_DB -out /home/nick/Desktop/Work/HEAT_Project/Projects_F13/Transposase/scaffolding_blast_export.out
