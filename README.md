@@ -1,7 +1,7 @@
-bioinformatics
-==============
-# HSU Bioinformatics
-##Spring 2014
+#HEAT Lab
+Humboldt Extreme Acidophile Team
 
-This repo will contain code and documentation produced during class
+Bioinformatics Scripts
 
+
+This repository contains scripts used by the HEAT lab in analyzing genomic data and improving genome assemblies. 
