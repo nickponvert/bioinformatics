@@ -143,3 +143,4 @@ def contig_file_profile(filename):
     print "N90: %d" % n_stat(record_lengths, 0.9)
 
 
+4/23/14 Test Edit by Matt Simenc
